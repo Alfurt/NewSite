@@ -5,7 +5,9 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" href="myicon.png"> <!-- ВСТАВИТЬ ИКОНКУ-->
+  <meta keywords="">
+  <meta descrition="">
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -13,26 +15,19 @@
 
   <link rel="stylesheet" href="style.css">
 
-
-  <!-- Галерея -->
-  <!-- 1. Link to jQuery (1.8 or later), -->
-
-
 </head>
 <body>
   <!--Навигационная панель -->
+<a name="Home"></a>  <!--Якорь-->
   <nav class="navbar navbar-light bg-light navbar-expand-md">
-    <a href="#" class="navbar-brand">My portfolio</a>
+    <a href="#" class="navbar-brand"><img class="brand-icon" src="favicon.png"></img></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="navbar-item">
-          <a href="#" class="nav-link">Homepage</a>
-        </li>
-        <li class="navbar-item">
-          <a href="#" class="nav-link">Blog</a>
+          <a href="#Home" class="nav-link">Домой</a>
         </li>
         <li class="navbar-item">
           <a href="#Portfolio" class="nav-link">Портфолио</a>
@@ -46,7 +41,7 @@
   </nav>
 
   <!--Приветствие-->
-  <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-3">Привет</h1>
       <p class="lead">Я оператор и монтажер. Зацените мои работы ниже</p>
@@ -54,64 +49,76 @@
   </div>
 
 
-  <!--GALLERY FRAME-->
-  <a name="Porfolio"></a>
   <!-- галерея-->
 
-  <div class="d-flex justify-content-center">
-    <div class="fotorama col-sm-3 col-md-3 col-lg-3 col-xl-3" style="min-height:1000px">
-      <img src="https://workmacro.com/wp-content/uploads/2018/02/4-by-3-1024x768.png"></img><!--Видео-->
-      <a href="https://youtu.be/UxPpxDxh7RY"></a>
-      <a href="https://youtu.be/HlWvCeTSdu4"></a>
-      <a href="https://youtu.be/XayOH00RuJ0"></a>
-    </div>
-    <div class="fotorama col-sm-3 col-md-3 col-lg-3 col-xl-3" style="min-height:1000px">
-      <!--Анимация-->
-      <img src="https://workmacro.com/wp-content/uploads/2018/02/4-by-3-1024x768.png"></img>
-      <a href="https://vk.com/doc174437152_476392157?hash=58a63fef74f09eeef6&dl=01b80601799ba88416&wnd=1&module=public&mp4=1"></a>
-      <a href="https://youtu.be/JjD6QFGNMKk"></a>
-    </div>
-    <div class="fotorama col-sm-3 col-md-3 col-lg-3 col-xl-3" style="min-height:1000px">
-      <!--Графика-->
-      <img src="https://workmacro.com/wp-content/uploads/2018/02/4-by-3-1024x768.png"></img>
-      <img src="https://pp.userapi.com/c850528/v850528435/14814/Y7U5PtSTWZE.jpg"></img>
-      <img src="https://pp.userapi.com/c849424/v849424487/8ad35/z6PPGcDNmuU.jpg"></img>
-      <img src="https://pp.userapi.com/c850032/v850032375/866f1/um3sPIyO9Yo.jpg"></img>
-    </div>
-  </div>
-
-
-
-
-  <!--Form-->
-  <a name="Contacts"></a> <!--Якорь-->
-  <div class=”row mt-5">
-    <div class=”col-sm-12 col-md-6 offset-md-3">
-      <h3>Reach out!</h3>
-      <form>
-        <div class=”form-group”>
-          <input type=”text” class=”form-control” id=”email” placeholder=”Your email..”>
+  <a name="Porfolio"></a> <!--Якорь-->
+  <h2>Портфолио</h2>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-md-3 col-lg-4 col-xl-3">
+        <div class="fotorama">
+          <img src="https://workmacro.com/wp-content/uploads/2018/02/4-by-3-1024x768.png"></img><!--Видео-->
+          <a href="https://youtu.be/UxPpxDxh7RY"></a>
+          <a href="https://youtu.be/HlWvCeTSdu4"></a>
+          <a href="https://youtu.be/XayOH00RuJ0"></a>
         </div>
-        <div class=”form-group”>
-          <textarea class=”form-control” placeholder=”Your message..”>
-          </textarea>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-4 col-xl-3">
+        <div class="fotorama">
+          <!--Анимация-->
+          <img src="https://workmacro.com/wp-content/uploads/2018/02/4-by-3-1024x768.png"></img>
+          <a href="https://vk.com/doc174437152_476392157?hash=58a63fef74f09eeef6&dl=01b80601799ba88416&wnd=1&module=public&mp4=1"></a>
+          <a href="https://youtu.be/JjD6QFGNMKk"></a>
         </div>
-        <button type=”submit” class=”btn btn-primary”>Submit</button></form>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-4 col-xl-3">
+        <div class="fotorama">
+          <!--Графика-->
+          <img src="https://workmacro.com/wp-content/uploads/2018/02/4-by-3-1024x768.png"></img>
+          <img src="https://pp.userapi.com/c850528/v850528435/14814/Y7U5PtSTWZE.jpg"></img>
+          <img src="https://pp.userapi.com/c849424/v849424487/8ad35/z6PPGcDNmuU.jpg"></img>
+          <img src="https://pp.userapi.com/c850032/v850032375/866f1/um3sPIyO9Yo.jpg"></img>
+        </div>
       </div>
     </div>
-
-
-    <!-- Optional JavaScript -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
-
-    <!-- fotorama.css & fotorama.js. -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+  </div>
+</div>
 
 
 
-  </html>
+
+<!--Form-->
+<a name="Contacts"></a> <!--Якорь-->
+<div class="container">
+<div class="row mt-5">
+  <div class="col-sm-12 col-md-6 offset-md-3">
+    <h3>Reach out!</h3>
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-control" id="email" placeholder="Ваш email...">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" placeholder="Ваше сообщение...">
+        </textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+
+<!-- fotorama.css & fotorama.js. -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

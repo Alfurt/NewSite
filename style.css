@@ -1,4 +1,11 @@
-.fotorama{
-  padding: 5px;
-  height: 100%;
+.navbar-brand{
+  max-size: 100%;
+}
+.brand-icon{
+  max-height: 30px;
+}
+
+
+h1, h2, p.lead{
+  text-align: center;
 }
