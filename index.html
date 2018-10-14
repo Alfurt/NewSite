@@ -10,10 +10,18 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
+<!-- галерея -->
+<script>$('#html5-videos').lightGallery()</script>
+<!-- галерея -->
+
+</head>
   <body>
     <!--Навигационная панель -->
     <nav class="navbar navbar-light bg-light navbar-expand-md">
       <a href="#" class="navbar-brand">My portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="navbar-item">
@@ -23,27 +31,54 @@
             <a href="#" class="nav-link">Blog</a>
           </li>
           <li class="navbar-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#Portfolio" class="nav-link">Портфолио</a>
           </li>
           <li class="navbar-item">
-            <a href="#" class="nav-link">Contact Us</a>
+            <a href="#Contacts" class="nav-link">Обратная связь</a>
           </li>
         </ul>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+
     </nav>
 
     <!--Приветствие-->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-3">Приветс</h1>
+        <h1 class="display-3">Привет</h1>
         <p class="lead">Я оператор и монтажер. Зацените мои работы ниже</p>
       </div>
     </div>
 
+    <!-- галерея -->
+
+    <!-- Hidden video div -->
+    <div style="display:none;" id="video1">
+        <video class="lg-video-object lg-html5">
+            <source src="https://youtu.be/XayOH00RuJ0" type="video">
+             Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <div style="display:none;" id="video2">
+        <video class="lg-video-object lg-html5">
+            <source src="https://youtu.be/JjD6QFGNMKk" type="video">
+             Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- data-src should not be provided when you use html5 videos -->
+    <ul id="html5-videos">
+      <li data-poster="https://en.wikipedia.org/wiki/File:Lake_mapourika_NZ.jpeg" data-sub-html="video caption1" data-html="#video1" >
+          <img src="img/thumb1.jpg"/>
+      </li>
+      <li data-poster="https://jpeg.org/images/jpeg2000-home.jpg" data-sub-html="video caption2" data-html="#video2" >
+          <img src="img/thumb2.jpg"/>
+      </li>
+    </ul>
+
+    <!-- галерея -->
+
     <!--Содержание карточки-->
+    <a name="Porfolio"></a> <!--Якорь-->
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-lg-3">
@@ -91,6 +126,7 @@
 
 
     <!--Form-->
+    <a name="Contacts"></a> <!--Якорь-->
     <div class=”row mt-5">
       <div class=”col-sm-12 col-md-6 offset-md-3">
         <h3>Reach out!</h3>
