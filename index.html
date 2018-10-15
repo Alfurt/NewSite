@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <title>myportfolio</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,55 +19,81 @@
 </head>
 <body>
   <!--Навигационная панель -->
-<a name="Home"></a>  <!--Якорь-->
-  <nav class="navbar navbar-light bg-light navbar-expand-md">
-    <a href="#" class="navbar-brand"><img class="brand-icon" src="favicon.png"></img></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="navbar-item">
-          <a href="#Home" class="nav-link">Домой</a>
-        </li>
-        <li class="navbar-item">
-          <a href="#Portfolio" class="nav-link">Портфолио</a>
-        </li>
-        <li class="navbar-item">
-          <a href="#Contacts" class="nav-link">Обратная связь</a>
-        </li>
-      </ul>
-    </div>
-
-  </nav>
-
-  <!--Приветствие-->
-    <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-3">Привет</h1>
-      <p class="lead">Я оператор и монтажер. Зацените мои работы ниже</p>
-    </div>
+  <a name="Home"></a>
+  <div class="fixed-top">  <!--Якорь-->
+    <nav class="navbar navbar-light bg-light navbar-expand-md">
+      <a href="#" class="navbar-brand"><img class="brand-icon" src="favicon.png"></img></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav navbar-right">
+          <li class="navbar-item">
+            <a href="#Home" class="nav-link">Домой</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#Portfolio" class="nav-link">Портфолио</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#Contacts" class="nav-link">Обратная связь</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 
 
-  <!-- галерея-->
+  <!--Приветствие
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+  <h1 class="display-3">Привет</h1>
+  <p class="lead">Я оператор и монтажер. Зацените мои работы ниже</p>
+</div>
+</div>-->
+
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="bgstart.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex text-center h-100">
+      <div class="my-auto w-100 text-white">
+        <h1 class="display-3">Video Header</h1>
+        <h2>With HTML5 Video and Bootstrap 4</h2>
+      </div>
+    </div>
+  </div>
+</header>
+<div class = "btn-center">
+  <a class="btn btn-info btn-lg btn-md" href="#" role="button">Узнать больше</a></div>
+<!--First Parallax Section-->
+<div class="jumbotron paral paralsec">
+<h1 class="display-3">Here is a heading 1</h1>
+<p class="lead">Here is a short description 1</p>
+<p class="lead">
+<a class="btn btn-info btn-lg btn-md" href="#" role="button">Here is a button 1</a>
+</p>
+</div>-->
+
+
 
   <a name="Porfolio"></a> <!--Якорь-->
   <h2>Портфолио</h2>
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-sm-6 col-md-3 col-lg-4 col-xl-3">
-        <div class="fotorama">
-          <img src="https://workmacro.com/wp-content/uploads/2018/02/4-by-3-1024x768.png"></img><!--Видео-->
+       <div class="fotorama">
+          <h3>Видео</h3><!--Видео-->
           <a href="https://youtu.be/UxPpxDxh7RY"></a>
           <a href="https://youtu.be/HlWvCeTSdu4"></a>
           <a href="https://youtu.be/XayOH00RuJ0"></a>
         </div>
-      </div>
+        </div>
       <div class="col-sm-6 col-md-3 col-lg-4 col-xl-3">
         <div class="fotorama">
           <!--Анимация-->
-          <img src="https://workmacro.com/wp-content/uploads/2018/02/4-by-3-1024x768.png"></img>
+          <h3>Анимация</h3>
           <a href="https://vk.com/doc174437152_476392157?hash=58a63fef74f09eeef6&dl=01b80601799ba88416&wnd=1&module=public&mp4=1"></a>
           <a href="https://youtu.be/JjD6QFGNMKk"></a>
         </div>
@@ -74,7 +101,7 @@
       <div class="col-sm-6 col-md-3 col-lg-4 col-xl-3">
         <div class="fotorama">
           <!--Графика-->
-          <img src="https://workmacro.com/wp-content/uploads/2018/02/4-by-3-1024x768.png"></img>
+          <h3>Графика</h3>
           <img src="https://pp.userapi.com/c850528/v850528435/14814/Y7U5PtSTWZE.jpg"></img>
           <img src="https://pp.userapi.com/c849424/v849424487/8ad35/z6PPGcDNmuU.jpg"></img>
           <img src="https://pp.userapi.com/c850032/v850032375/866f1/um3sPIyO9Yo.jpg"></img>
@@ -82,27 +109,28 @@
       </div>
     </div>
   </div>
-</div>
 
 
 
 
-<!--Form-->
-<a name="Contacts"></a> <!--Якорь-->
-<div class="container">
-<div class="row mt-5">
-  <div class="col-sm-12 col-md-6 offset-md-3">
-    <h3>Reach out!</h3>
-    <form>
-      <div class="form-group">
-        <input type="text" class="form-control" id="email" placeholder="Ваш email...">
+
+  <!--Form-->
+  <a name="Contacts"></a> <!--Якорь-->
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-sm-12 col-md-6 offset-md-3">
+        <h3>Reach out!</h3>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="email" placeholder="Ваш email...">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Ваше сообщение...">
+            </textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
       </div>
-      <div class="form-group">
-        <textarea class="form-control" placeholder="Ваше сообщение...">
-        </textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Отправить</button>
-    </form>
     </div>
   </div>
 </div>
