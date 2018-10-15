@@ -64,9 +64,9 @@ background-position: 50% 50%;
 /* Paragraph for Parallax Section */
 .paral p {
 font-size: 24px;
-color:#f5f5f5;
+color:black;
 text-align: center;
-line-height: 60px;
+line-height: 40px;
 }
 
 /* Heading for Parallax Section */
@@ -81,6 +81,7 @@ line-height: 100px;
 /* Image for Parallax Section */
 .paralsec {
 background-image: url("https://pp.userapi.com/c845016/v845016375/f9ca9/ZjcIdaDzRmo.jpg");
+opacity: 0.7;
 
 }
 
