@@ -10,23 +10,15 @@
   <meta descrition="">
   <link rel="icon" type="image/png" href="favicon.png">
 
-  <!-- Bootstrap CSS  -->
+  <!-- Bootstrap CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-
-
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-  <script type="text/javascript">
-  (function(){
-    emailjs.init("user_lgrVAEhirv4aFvhmA5mLO");
-  })();
-  </script>
 </head>
 <body>
   <!--Навигационная панель -->
-  <a name="Home"></a>
+
   <div class="fixed-top">  <!--Якорь-->
     <nav class="navbar navbar-light bg-light navbar-expand-md">
       <a href="#" class="navbar-brand"><img class="brand-icon" src="favicon.png"></img></a>
@@ -45,7 +37,7 @@
             <a href="#Contacts" class="nav-link">Обратная связь</a>
           </li>
           <li class="navbar-item">
-            <a href="#Home" class="nav-link">Домой</a>
+            <a href="#" class="nav-link">Домой</a>
           </li>
         </ul>
       </div>
@@ -69,8 +61,8 @@
     <div class="container h-100">
       <div class="d-flex text-center h-100">
         <div class="my-auto w-100 text-white">
-          <h1 class="display-3">Текст</h1>
-          <h2>Какой-то крутой подзаголовок</h2>
+          <h1 class="display-3">Видео</h1>
+          <h2>Монтаж. Анимация. Графика.</h2>
         </div>
       </div>
     </div>
@@ -81,21 +73,26 @@
 
     <!--First Parallax Section-->
     <a name="About"></a>
-    <div class="jumbotron paral paralsec">
-      <h1 class="display-3">Это я</h1>
-      <p class="lead">Меня зовут Алиса. Я студентка факультета коммуникаций, медиа и дизайна Высшей Школы Экономики. На этом сайте вы сможете узнать больше о моих интересах и ознакомиться с моими работами.</p>
-      <p class="lead">
-        <a class="btn btn-info btn-lg btn-md" href="https://www.facebook.com/alyskor" role="button">Фэйсбук</a>
-      </p>
+    <div class="jumbotron paral paralsec jumbotron-fluid">
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-10 col-md-9 col-lg-8 col-xl-7">
+            <h1 class="display-3" style="font-weight: bold; color: white;">Привет. Я - Алиса.</h1>
+            <!-- <p style="text-shadow: #708090 0 0 15px;">Я студентка факультета коммуникаций, медиа и дизайна Высшей Школы Экономики. На этом сайте вы сможете узнать больше о моих интересах и ознакомиться с моими работами.</p> -->
+            <p style="font-weight: bold; color: white; background-color: rgba(211,211,211, 0.6);">Студентка факультета коммуникаций, медиа и дизайна Высшей Школы Экономики. На этом сайте вы сможете узнать больше о моих интересах и ознакомиться с моими работами.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
 
 
-    <a name="Porfolio"></a> <!--Якорь-->
+    <a name="Portfolio"></a> <!--Якорь-->
     <h2>Портфолио</h2>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-sm-6 col-md-3 col-lg-4 col-xl-3">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
           <div class="fotorama">
             <h3>Видео</h3><!--Видео-->
             <a href="https://youtu.be/UxPpxDxh7RY"></a>
@@ -103,7 +100,7 @@
             <a href="https://youtu.be/XayOH00RuJ0"></a>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-4 col-xl-3">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
           <div class="fotorama">
             <!--Анимация-->
             <h3>Анимация</h3>
@@ -111,7 +108,7 @@
             <a href="https://youtu.be/JjD6QFGNMKk"></a>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-4 col-xl-3">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
           <div class="fotorama">
             <!--Графика-->
             <h3>Графика</h3>
@@ -133,7 +130,7 @@
       <div class="row mt-5">
         <div class="col-sm-12 col-md-6 offset-md-3">
           <h3>Обратная связь</h3>
-          <form>
+          <form id="myform" method="post">
             <div class="form-group">
               <input type="text" class="form-control" name="name" placeholder="Имя">
             </div>
@@ -141,39 +138,43 @@
               <input type="text" class="form-control" id="email" name="email" placeholder="Email">
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="Message" placeholder="Сообщение">
-              </textarea>
+              <textarea class="form-control" name="Message" placeholder="Сообщение"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Отправить</button>
           </form>
         </div>
       </div>
     </div>
-  </div>
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-  <script type="text/javascript">
-     (function(){
-        emailjs.init("user_lgrVAEhirv4aFvhmA5mLO");
-     })();
-  </script>
+    <div style="padding:16px" class="jumbotron paral paralsec2 jumbotron-fluid">
+      <a  href="https://wa.me/79162409234"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.957.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.213-1.129-.417-1.987-.858-3.285-2.859-3.384-2.991-.099-.132-.809-1.074-.809-2.049 0-.975.512-1.454.693-1.653.182-.2.396-.25.528-.25l.38.007c.122.006.285-.046.446.34.165.397.561 1.372.611 1.471.049.099.083.215.016.347-.066.132-.099.215-.198.33l-.297.347c-.099.099-.202.206-.087.404.116.198.513.847 1.102 1.372.757.675 1.395.884 1.593.983.198.099.314.083.429-.05.116-.132.495-.578.627-.777s.264-.165.446-.099 1.156.545 1.354.645c.198.099.33.149.38.231.049.085.049.482-.116.945zm3.088-14.762h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-6.967 19.862c-1.327 0-2.634-.333-3.792-.965l-4.203 1.103 1.125-4.108c-.694-1.202-1.059-2.566-1.058-3.964.002-4.372 3.558-7.928 7.928-7.928 2.121.001 4.112.827 5.609 2.325s2.321 3.491 2.32 5.609c-.002 4.372-3.559 7.928-7.929 7.928z"/></svg></a>
+      <a href="https://www.facebook.com/alyskor"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg></a>
+      <a href="https://github.com/Alfurt"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg></a>
+    </div>
+    <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
 
-  <script src="emailjs.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init("user_lgrVAEhirv4aFvhmA5mLO");
+    })();
+    </script>
+    <script src="emailjs.js"></script>
+
+    <!--КОнец скрипта формы-->
+
+    <!-- fotorama.css & fotorama.js. -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 
 
-  <!-- Optional JavaScript -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
 
-  <!-- fotorama.css & fotorama.js. -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
-
-
-
-</html>
+  </html>

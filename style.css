@@ -1,5 +1,5 @@
 body{
-padding-top: 30px;
+  padding-top: 30px;
 }
 
 .navbar-brand{
@@ -12,8 +12,14 @@ padding-top: 30px;
 
 h2{
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
+form{
+  text-align: center;
+  padding-bottom: 20px;
+}
 
 h3{
   margin-top: 25%;
@@ -42,70 +48,73 @@ h3{
   border-color: darkgrey !important;
   box-shadow: 0 0 20px rgba(0,0,0,0.5) !important;
 }
- .btn:visited{
+.btn:visited{
   background-color: black;
   border-color: black;
 }
 
+.btn-fb{
+  background:url('image.jpg')
+}
 
 
 
 
 
-/* -------------------Parallax------------------*/
+/* --------------------------------------Parallax------------------------------*/
 /* Header Parallax Element Style*/
 .paral {
-min-height: 600px;
-background-attachment: fixed;
-background-size: cover;
-background-position: 50% 50%;
+  background-attachment: fixed;
+  background-position: 50% 50%;
 }
 
 /* Paragraph for Parallax Section */
 .paral p {
-font-size: 24px;
-color:black;
-text-align: center;
-line-height: 40px;
+  font-size: 24px;
+  color:black;
+  text-align: center;
+  line-height: 40px;
 }
 
 /* Heading for Parallax Section */
 .paral h1 {
-color: rgba(255, 255, 255, 0.8);
-font-size: 60px;
-text-align: center;
-padding-top: 60px;
-line-height: 100px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 60px;
+  text-align: center;
+  padding-top: 60px;
+  line-height: 100px;
 }
 
 /* Image for Parallax Section */
 .paralsec {
-background-image: url("https://pp.userapi.com/c845016/v845016375/f9ca9/ZjcIdaDzRmo.jpg");
-opacity: 0.7;
-
+  background-image: url("https://pp.userapi.com/c845016/v845016375/f9ca9/ZjcIdaDzRmo.jpg");
+  opacity: 0.7;
+  background-size: cover;
+  min-height: 600px;
 }
 
 .paralsec1 {
-background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");}
+  background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");
+}
 
 .paralsec2 {
-background-image: url("https://img.webnots.com/2015/11/parallax2.jpg");
+  background-image: url("footer.jpg");
 }
 
 /* Remove Bottom Margin from Jumbotron */
-.jumbotron{margin-bottom: 0;}
+.jumbotron{ margin-bottom: 0; }
 /* --------------------end of parallax----------------------------------------*/
 
 /*----------------------video header------------*/
 header {
   padding-top: 60px;
-    position: relative;
-    background-color: black;
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
 
 header video {
   position: absolute;
@@ -138,3 +147,16 @@ header .overlay {
   z-index: 1;
 }
 /*----------------------video header------------*/
+
+
+
+/* icons*/
+.wa-icon{
+  background-image: url("icons/wa2.png");
+}
+.fb-icon{
+  background-image: url("icons/fb.png");
+}
+.gh-icon{
+  background-image: url("icons/gh.png");
+}
