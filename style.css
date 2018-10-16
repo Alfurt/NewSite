@@ -53,12 +53,6 @@ h3{
   border-color: black;
 }
 
-.btn-fb{
-  background:url('image.jpg')
-}
-
-
-
 
 
 /* --------------------------------------Parallax------------------------------*/
@@ -71,9 +65,9 @@ h3{
 /* Paragraph for Parallax Section */
 .paral p {
   font-size: 24px;
-  color:black;
   text-align: center;
   line-height: 40px;
+  margin-top: 60px;
 }
 
 /* Heading for Parallax Section */
@@ -81,14 +75,20 @@ h3{
   color: rgba(255, 255, 255, 0.8);
   font-size: 60px;
   text-align: center;
-  padding-top: 60px;
+  margin-top: 60px;
   line-height: 100px;
+}
+.container .paral-background{
+  background-color: rgba(21,21,21, 0.4);
+  border-radius:10px;
+  font-weight: bold;
+  color: white;
 }
 
 /* Image for Parallax Section */
 .paralsec {
   background-image: url("https://pp.userapi.com/c845016/v845016375/f9ca9/ZjcIdaDzRmo.jpg");
-  opacity: 0.7;
+  /* opacity: 0.7; */
   background-size: cover;
   min-height: 600px;
 }
