@@ -6,14 +6,14 @@ myform.submit(function(event){
   var service_id = "default_service";
   var template_id = "template_QYo1WAau";
 
-  myform.find("button").text("Sending...");
+  myform.find("button").text("Отправка...");
   emailjs.sendForm(service_id,template_id,myform[0])
   	.then(function(){
-    	alert("Sent!");
-       myform.find("button").text("Send");
+    	alert("Письмо отправлено.");
+       myform.find("button").text("Отправлено");
     }, function(err) {
-       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-       myform.find("button").text("Send");
+       alert("Что-то пошло не так. Свяжитесь со мной через социальные сети.");
+       myform.find("button").text("Отправить");
     });
   return false;
 });

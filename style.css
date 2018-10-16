@@ -148,15 +148,27 @@ header .overlay {
 }
 /*----------------------video header------------*/
 
-
-
-/* icons*/
-.wa-icon{
-  background-image: url("icons/wa2.png");
+.skills-block{
+  background-color: #f9f9f9;
+  margin-top: 20px;
 }
-.fb-icon{
-  background-image: url("icons/fb.png");
+/* ------------- service------------*/
+
+.service-box {
+	background: #f9f9f9;
+	padding: 20px;
+  text-align: center;
+  min-height: 220px;
 }
-.gh-icon{
-  background-image: url("icons/gh.png");
+
+.service-icon {
+  max-width: 60px;
+  display: block;
+  margin: 0 auto;
+
+}
+/*service------------*/
+.callbackform{
+  background-color: #f9f9f9;
+  border-radius: 10px 10px 0px 0px;
 }
